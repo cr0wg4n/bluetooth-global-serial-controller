@@ -86,7 +86,7 @@ def reiniciarServiciosBluetooth():
     os.system('sudo service bluetooth restart')
 
 try:
-    #time.sleep(30)
+    time.sleep(30)
     os.system('sudo rfcomm release 0')
     os.system('sudo rfcomm release 1')
     gpio.setmode(gpio.BOARD)
